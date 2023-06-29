@@ -8,7 +8,7 @@ const authenticate = (req, res, next) => {
     const decoded = jwt.verify(token, process.env.privatekey);
 
     if (decoded) {
-      req.userId = decoded.userId;
+      req.body.userId = decoded.userId;
       next();
     } else {
       res.status(401).json({ msg: "Unauthorized" });

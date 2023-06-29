@@ -5,12 +5,16 @@ require("dotenv").config()
 const app = express()
 
 const { todo_router } = require("./routes/todo.router")
+const { UserRouter } = require("./routes/user.router")
+const { authenticate } = require("./middleware/authenticate")
 
 
 app.use(express.json())
 app.use(cors())
 
-app.use("/todo",todo_router)
+app.use("/user",UserRouter)
+
+app.use("/todo",authenticate,todo_router)
 
 
 app.listen(process.env.PORT|| 8080 , async()=>{
