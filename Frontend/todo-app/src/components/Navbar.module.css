@@ -1,0 +1,30 @@
+nav{
+    /* border : 1px solid red; */
+    background-color: #2E0249;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    border: 1px solid yellow;
+}
+
+li{
+    color: white;
+    border: 1px solid white;
+
+}
+
+.link{
+    color: white;
+}
+
+#logo{
+    border: 1px solid red;
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}

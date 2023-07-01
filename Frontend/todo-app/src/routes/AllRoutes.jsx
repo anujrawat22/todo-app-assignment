@@ -7,7 +7,7 @@ import Signup from '../pages/Signup'
 const AllRoutes = () => {
   return (
   <Routes>
-    <Route path='/taks'  element={<Tasks/>}/>
+    <Route path='/tasks'  element={<Tasks/>}/>
     <Route path='/login' element={<Login/>}  />
     <Route path='/signup' element={<Signup/>} />
   </Routes>
